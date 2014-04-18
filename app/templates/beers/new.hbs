@@ -1,11 +1,12 @@
 <h2>Add New Beer</h2>
+<form method="get">
 <ul class="post-publish">
   <li>
     {{input value=beer.name placeholder="Beer Name"}}
   </li>
-<!--   <li>
+  <li>
     {{input value=beer.brewer placeholder="Brewer"}}
-  </li> -->
+  </li>
   <li>
     {{input value=beer.abv placeholder="ABV"}}
   </li>
@@ -19,3 +20,4 @@
     <button {{action "save"}}>Add Beer</button>
   </li>
 </ul>
+</form>

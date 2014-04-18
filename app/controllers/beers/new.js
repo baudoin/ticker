@@ -37,6 +37,7 @@ export default Ember.ObjectController.extend({
       var newBeer = this.store.createRecord('beer', {
         added: new Date().getTime(),
         name: this.get('beer.name'),
+        slug: this.get('beer.name').replace(/\s+/g, '-').toLowerCase(),
         brewer: this.get('beer.brewer'),
         abv: this.get('beer.abv'),
         ibu: this.get('beer.ibu'),
@@ -46,6 +47,7 @@ export default Ember.ObjectController.extend({
       newBeer.save();
       this.setProperties({
         'beer.name': '',
+        'beer.slug': '',
         'beer.brewer': '',
         'beer.abv': '',
         'beer.ibu': '',
