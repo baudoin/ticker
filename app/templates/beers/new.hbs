@@ -1,0 +1,21 @@
+<h2>Add New Beer</h2>
+<ul class="post-publish">
+  <li>
+    {{input value=beer.name placeholder="Beer Name"}}
+  </li>
+<!--   <li>
+    {{input value=beer.brewer placeholder="Brewer"}}
+  </li> -->
+  <li>
+    {{input value=beer.abv placeholder="ABV"}}
+  </li>
+  <li>
+    {{input value=beer.ibu placeholder="IBU"}}
+  </li>
+  <li>
+    {{textarea value=beer.note placeholder="Notes"}}
+  </li>
+  <li>
+    <button {{action "save"}}>Add Beer</button>
+  </li>
+</ul>
