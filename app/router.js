@@ -7,7 +7,7 @@ Router.map(function() {
     this.route('new');
   });
 
-  this.resource('beer', { path: '/beer/:post_id' });
+  this.resource('beer', { path: 'beers/:beer_name' });
 
   this.resource('brewers', function(){
     // this.route('brewer', { path: ':brewer_id' });

@@ -1,8 +1,11 @@
 <h2>Your Beers:</h2>
+
+{{#link-to 'beers.new'}}Add a new Beer{{/link-to}}
+
 <ul>
 {{#each}}
   <li>
-    {{#link-to}}
+    {{#link-to 'beer'}}
       {{name}}
     {{/link-to}}
   </li>

@@ -1,5 +1,3 @@
-var BeersView = Ember.View.extend({
+export default Ember.View.extend({
 
 });
-
-export default BeersView;

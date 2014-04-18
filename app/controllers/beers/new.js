@@ -35,8 +35,9 @@ export default Ember.ObjectController.extend({
       // }.bind(this));
 
       var newBeer = this.store.createRecord('beer', {
+        added: new Date().getTime(),
         name: this.get('beer.name'),
-        // brewer: this.get('beer.brewer'),
+        brewer: this.get('beer.brewer'),
         abv: this.get('beer.abv'),
         ibu: this.get('beer.ibu'),
         note: this.get('beer.note')
